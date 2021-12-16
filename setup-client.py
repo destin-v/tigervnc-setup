@@ -34,7 +34,10 @@ HOME_FOLDER = os.path.expanduser("~")
 TIGERVNC_VER = "1.12.0"
 TIGERVNC_PORT = "5901"
 
-
+def validate():
+    if SERVER_IP == "xxx.xx.xx.xx":
+        raise ValueError("Invalid server ip address!")
+        
 def update_file(file: str, custom_line: str) -> None:
     """Updates the specified file by adding the custom line.
 
@@ -115,6 +118,7 @@ def print_summary():
 
 if __name__ == "__main__":
 
+    validate()
     print_intro()
 
     # await user input

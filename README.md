@@ -34,6 +34,8 @@ Date: 12-15-2021
 
 * Install [homebrew](https://brew.sh) on your client (local machine).
 
+* Modify the `setup-client.py` variables to match your configuration settings.
+  
 * Run 
   > python setup-client.py
 
