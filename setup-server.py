@@ -10,7 +10,7 @@
 #               Works on Ubuntu 18 and 20.  Not tested on any other
 #               OS.
 #
-# Author:       Destin V
+# Author:       William Li
 # Date:         12-14-2021
 # ------------------------------------------------------------------
 

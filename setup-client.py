@@ -11,7 +11,7 @@
 #               Works on MacOSX clients.  Not tested on any other
 #               OS.
 #
-# Author:       Destin V
+# Author:       William Li
 # Date:         12-14-2021
 # ------------------------------------------------------------------
 
@@ -141,7 +141,7 @@ if __name__ == "__main__":
     alias_vnc_viewer = (
         f"alias vnc_viewer='~/Applications/TigerVNC\ Viewer\ {TIGERVNC_VER}.app'"
     )
-    alias_vnc_devbox = f"alias {CUSTOM_ALIAS}='ttab ssh -L {TIGERVNC_PORT}:{SERVER_LOCAL}:{TIGERVNC_PORT} {SERVER_LOGIN}; alias_vnc_viewer'"
+    alias_vnc_devbox = f"alias {CUSTOM_ALIAS}='ssh -L {TIGERVNC_PORT}:{SERVER_LOCAL}:{TIGERVNC_PORT} {SERVER_LOGIN}'"
 
     # define the path to the shell configurations
     bashrc = os.path.abspath("%s/.bashrc" % HOME_FOLDER)
