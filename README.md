@@ -169,9 +169,9 @@ If you need a proxy for the wget configuration file at `/etc/wgetrc`.
 ```bash
  # You can set the default proxies for Wget to use for http, https, and ftp.
  # They will override the value in the environment.
- https_proxy = <proxy address>
- http_proxy = <proxy address>
- ftp_proxy = <proxy address>
+ https_proxy = <proxy_address>
+ http_proxy = <proxy_address>
+ ftp_proxy = <proxy_address>
  
  # If you do not want to use proxy at all, set this to off.
  use_proxy = on
