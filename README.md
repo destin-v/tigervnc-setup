@@ -159,3 +159,20 @@ If you have trouble with the display check the xstartup script.  You may need to
  snap set system proxy.http="<proxy_address>"
  snap set system proxy.https="<proxy_address>"
  ```
+
+ If you have trouble opening Firefox make sure Xauthority is set:
+ ```bash
+export XAUTHORITY=$HOME/.Xauthority
+ ```
+
+If you need a proxy for the wget configuration file at `/etc/wgetrc`.
+```bash
+ # You can set the default proxies for Wget to use for http, https, and ftp.
+ # They will override the value in the environment.
+ https_proxy = <proxy address>
+ http_proxy = <proxy address>
+ ftp_proxy = <proxy address>
+ 
+ # If you do not want to use proxy at all, set this to off.
+ use_proxy = on
+ ```
