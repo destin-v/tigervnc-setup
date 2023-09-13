@@ -45,9 +45,9 @@ $ python setup-server.py
 ## Client Instructions
 
 > Note: Install [Homebrew](https://brew.sh) on your client (local machine) if you do not already have it!
-> 
+>
 1) Download and install the [TigerVNC](https://github.com/TigerVNC/tigervnc/releases) binary (not the source code!).
-2) Place **TigerVNC** app in the **~/Applications/** folder.  
+2) Place **TigerVNC** app in the **~/Applications/** folder.
 3) Remember to allow access by opening it with **Ctrl-Click**.
 
 <figure>
@@ -79,7 +79,7 @@ $ python setup-server.py
   SERVER_LOCAL = "127.0.0.1"  # leave this as default to use localhost
   CUSTOM_ALIAS = "vnc-devbox"  # the custom alias you want for connecting
   ```
-  
+
 5) Run **setup-client.py**
   ```bash
   $ python setup-client.py
@@ -137,7 +137,7 @@ For best performance set the following options by entering **F8**.
 -  Preferred Encoding: Tight
 -  Custom Compression Level: 1
 -  Allow JPEG Compression: 5
-  
+
 # Troubleshooting
 To kill the sessions log into the server and execute:
 ```bash
@@ -152,8 +152,8 @@ If you have trouble with the display check the xstartup script.  You may need to
  unset DBUS_SESSION_BUS_ADDRESS
  #startkde &
  startplasma-x11
- 
- 
+
+
  [ -x /etc/vnc/startplasma-x11 ] && exec /etc/vnc/startplasma-x11
  [ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
  xsetroot -solid grey
@@ -179,7 +179,7 @@ If you need a proxy for the wget configuration file at `/etc/wgetrc`.
  https_proxy = <proxy_address>
  http_proxy = <proxy_address>
  ftp_proxy = <proxy_address>
- 
+
  # If you do not want to use proxy at all, set this to off.
  use_proxy = on
  ```

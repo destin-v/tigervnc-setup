@@ -3,8 +3,8 @@
  unset DBUS_SESSION_BUS_ADDRESS
  #startkde &
  startplasma-x11
- 
- 
+
+
  [ -x /etc/vnc/startplasma-x11 ] && exec /etc/vnc/startplasma-x11
  [ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
  xsetroot -solid grey

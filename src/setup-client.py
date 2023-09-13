@@ -14,7 +14,6 @@
 # Author:       William Li
 # Date:         12-14-2021
 # ------------------------------------------------------------------
-
 import os
 
 # ------------------------------------------------------------------
@@ -119,7 +118,6 @@ def print_summary():
 
 
 if __name__ == "__main__":
-
     validate()
     print_intro()
 
@@ -138,9 +136,6 @@ if __name__ == "__main__":
     os.system("ttab")
 
     # create an alias that will be added to the shell
-    alias_vnc_viewer = (
-        f"alias vnc_viewer='~/Applications/TigerVNC\ Viewer\ {TIGERVNC_VER}.app'"
-    )
     alias_vnc_devbox = f"alias {CUSTOM_ALIAS}='ssh -L {TIGERVNC_PORT}:{SERVER_LOCAL}:{TIGERVNC_PORT} {SERVER_LOGIN}'"
 
     # define the path to the shell configurations
@@ -148,10 +143,7 @@ if __name__ == "__main__":
     zshrc = os.path.abspath("%s/.zshrc" % HOME_FOLDER)
 
     # update the files with custom alias
-    update_file(file=bashrc, custom_line=alias_vnc_viewer)
-    update_file(file=zshrc, custom_line=alias_vnc_viewer)
     update_file(file=bashrc, custom_line=alias_vnc_devbox)
     update_file(file=zshrc, custom_line=alias_vnc_devbox)
 
     print_summary()
-

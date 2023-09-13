@@ -13,7 +13,6 @@
 # Author:       William Li
 # Date:         12-14-2021
 # ------------------------------------------------------------------
-
 from os import system
 
 # update the package manager
