@@ -131,6 +131,13 @@ X DISPLAY #	RFB PORT #	RFB UNIX PATH	PROCESS ID #	SERVER
   <figcaption align = "center"><b>Fig.7 - You need to enter your standard user password to log into the computer.</b></figcaption>
 </figure>
 
+# Speed Optimizations
+For best performance set the following options by entering **F8**.
+
+-  Preferred Encoding: Tight
+-  Custom Compression Level: 1
+-  Allow JPEG Compression: 5
+  
 # Troubleshooting
 To kill the sessions log into the server and execute:
 ```bash
