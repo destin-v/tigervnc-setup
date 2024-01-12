@@ -37,8 +37,8 @@ This package contains scripts and executables needed for you to access/control a
   <figcaption align = "center"><b>Fig.2 - A beautiful GUI based OS.</b></figcaption>
 </figure>
 
-### The script will perform the following processes.
----
+
+The script will perform the following processes:
 
 1. Setup a virtual desktop environment on the server.
 2. Setup a forwarding server that will broadcast displays to clients.
@@ -53,11 +53,13 @@ $ python setup-server.py
 
 <figure>
     <p align="center">
-    <img src="docs/pics/sddm.png" alt="drawing" width="700"/>
+      <img src="docs/pics/sddm.png" alt="drawing" width="700"/>
     </p>
-  <figcaption align = "center"><b>Fig.3 - During the installation process a screen will pop up asking what display manager you want to use.  Select `sddm`.</b></figcaption>
 </figure>
 
+<p align="center">
+  <b>Fig.3 - During the installation process a screen will pop up asking what display manager you want to use.  Select `sddm`.</b>
+</p>
 
 >Note: You will be asked to setup a login password.  This is not your username login password.  Rather it is a password to log into the viewer for Tiger VNC.  As a default you can enter `ubunutu`.
 ## Client Instructions
@@ -72,17 +74,21 @@ $ python setup-server.py
     <p align="center">
     <img src="docs/pics/allow_vnc.png" alt="drawing" width="250"/>
     </p>
-  <figcaption align = "center"><b>Fig.4 - Select Open.</b></figcaption>
 </figure>
 
+<p align="center">
+  <b>Fig.4 - Select Open.</b>
+</p>
 
 <figure>
     <p align="center">
     <img src="docs/pics/vnc_viewer.png" alt="drawing" width="425"/>
     </p>
-  <figcaption align = "center"><b>Fig.5 - You will see this window if it successfully opens.</b></figcaption>
 </figure>
 
+<p align="center">
+  <b>Fig.5 - You will see this window if it successfully opens.</b>
+</p>
 
 
 1) Modify the **`setup-client.py`** variables to match your configuration settings.
@@ -139,15 +145,21 @@ X DISPLAY #	RFB PORT #	RFB UNIX PATH	PROCESS ID #	SERVER
     <p align="center">
     <img src="docs/pics/vnc_addr.png" alt="drawing" width="425"/>
     </p>
-  <figcaption align = "center"><b>Fig.6 - The reason we are entering the address as localhost:5901 is because the SSH command has bounded the host address to that local address.</b></figcaption>
 </figure>
+
+<p align="center">
+  <b>Fig.6 - The reason we are entering the address as localhost:5901 is because the SSH command has bounded the host address to that local address.</b>
+</p>
 
 <figure>
     <p align="center">
     <img src="docs/pics/login.png" alt="drawing" width="300"/>
     </p>
-  <figcaption align = "center"><b>Fig.7 - You need to enter your standard user password to log into the computer.</b></figcaption>
 </figure>
+
+<p align="center">
+  <b>Fig.7 - You need to enter your standard user password to log into the computer.</b>
+</p>
 
 # 🏃‍♂️ Speed Optimizations
 For best performance set the following options by entering **F8**.
