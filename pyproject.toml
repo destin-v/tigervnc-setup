@@ -44,7 +44,7 @@ readme = "README.md"
 packages = [{include = "dev_template"}]
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.10"
 
 [tool.poetry.group.dev.dependencies]
 black = "*"
@@ -54,6 +54,7 @@ nox = "*"
 pdoc3 = "*"
 pre-commit = "*"
 pytest = "*"
+pytest-cov = "*"
 scalene = "*"
 
 [build-system]

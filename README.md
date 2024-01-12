@@ -1,20 +1,38 @@
-# Description
-This package contains scripts and executables needed for you to access/control a remote computer via a desktop Graphic User Interface (GUI).  Most development servers are terminal based without screen forwarding capabilities.  This presents a problem if the user needs to use GUI based applications on the remote server.  This repo provides code and instructions on how to setup a proper screen forwarding solution between host and clients.
+<p align="center">
+  <a href="https://github.com/destin-v">
+    <img src="https://drive.google.com/uc?export=view&id=1yFte-RASCcF1ahkYg1Jybavi-gWje8kp" alt="drawing" width="500"/>
+  </a>
+</p>
 
-### Author: William Li
-### Version: 1.0.0
----
+# 📚 Description
+<p align="center">
+  <img src="docs/pics/program_logo.png" alt="drawing" width="300"/>
+</p>
+
+<p align="center">
+  <a href="https://devguide.python.org/versions/">              <img alt="" src="https://img.shields.io/badge/python-^3.10-blue?logo=python&logoColor=white"></a>
+  <a href="https://docs.github.com/en/actions/quickstart">      <img alt="" src="https://img.shields.io/badge/CI-github-blue?logo=github&logoColor=white"></a>
+  <a href="https://black.readthedocs.io/en/stable/index.html">  <img alt="" src="https://img.shields.io/badge/code%20style-black-blue"></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/destin-v/tigervnc-setup/actions/workflows/pre-commit.yml">  <img alt="pre-commit" src="https://github.com/destin-v/tigervnc-setup/actions/workflows/pre-commit.yml/badge.svg"></a>
+  <a href="https://destin-v.github.io/tigervnc-setup/src.html">                           <img alt="pdoc" src="https://github.com/destin-v/tigervnc-setup/actions/workflows/pdoc.yml/badge.svg"></a>
+  <a href="https://github.com/destin-v/tigervnc-setup/actions/workflows/pytest.yml">      <img alt="pytest" src="https://github.com/destin-v/tigervnc-setup/actions/workflows/pytest.yml/badge.svg"></a>
+</p>
+
+This package contains scripts and executables needed for you to access/control a remote computer via a desktop Graphic User Interface (GUI).  Most development servers are terminal based without screen forwarding capabilities.  This presents a problem if the user needs to use GUI based applications on the remote server.  This repo provides code and instructions on how to setup a proper screen forwarding solution between host and clients.
 
 <figure>
     <p align="center">
-    <img src="docs/ec2.png" alt="drawing" width="700"/>
+    <img src="docs/pics/ec2.png" alt="drawing" width="700"/>
     </p>
   <figcaption align = "center"><b>Fig.1 - Typical host terminal.</b></figcaption>
 </figure>
 
 <figure>
     <p align="center">
-    <img src="docs/plasma.jpeg" alt="drawing" width="700"/>
+    <img src="docs/pics/plasma.jpeg" alt="drawing" width="700"/>
     </p>
   <figcaption align = "center"><b>Fig.2 - A beautiful GUI based OS.</b></figcaption>
 </figure>
@@ -26,7 +44,7 @@ This package contains scripts and executables needed for you to access/control a
 2. Setup a forwarding server that will broadcast displays to clients.
 3. Setup a client that can interact with the server over SSH.
 
-# Installation
+# 🛠️ Installation
 ## Server Instructions
 1.) Run the **setup-server.py** script.
 ```bash
@@ -35,7 +53,7 @@ $ python setup-server.py
 
 <figure>
     <p align="center">
-    <img src="docs/sddm.png" alt="drawing" width="700"/>
+    <img src="docs/pics/sddm.png" alt="drawing" width="700"/>
     </p>
   <figcaption align = "center"><b>Fig.3 - During the installation process a screen will pop up asking what display manager you want to use.  Select `sddm`.</b></figcaption>
 </figure>
@@ -52,7 +70,7 @@ $ python setup-server.py
 
 <figure>
     <p align="center">
-    <img src="docs/allow_vnc.png" alt="drawing" width="250"/>
+    <img src="docs/pics/allow_vnc.png" alt="drawing" width="250"/>
     </p>
   <figcaption align = "center"><b>Fig.4 - Select Open.</b></figcaption>
 </figure>
@@ -60,7 +78,7 @@ $ python setup-server.py
 
 <figure>
     <p align="center">
-    <img src="docs/vnc_viewer.png" alt="drawing" width="425"/>
+    <img src="docs/pics/vnc_viewer.png" alt="drawing" width="425"/>
     </p>
   <figcaption align = "center"><b>Fig.5 - You will see this window if it successfully opens.</b></figcaption>
 </figure>
@@ -85,7 +103,7 @@ $ python setup-server.py
   $ python setup-client.py
   ```
 
-# Use
+# 👨‍💻 Use
 After the installation completes, you will be provided an alias called **vnc-devbox** that is added to your **.bashrc** and **.zshrc** startup files.
 
 ```bash
@@ -119,26 +137,26 @@ X DISPLAY #	RFB PORT #	RFB UNIX PATH	PROCESS ID #	SERVER
 
 <figure>
     <p align="center">
-    <img src="docs/vnc_addr.png" alt="drawing" width="425"/>
+    <img src="docs/pics/vnc_addr.png" alt="drawing" width="425"/>
     </p>
   <figcaption align = "center"><b>Fig.6 - The reason we are entering the address as localhost:5901 is because the SSH command has bounded the host address to that local address.</b></figcaption>
 </figure>
 
 <figure>
     <p align="center">
-    <img src="docs/login.png" alt="drawing" width="300"/>
+    <img src="docs/pics/login.png" alt="drawing" width="300"/>
     </p>
   <figcaption align = "center"><b>Fig.7 - You need to enter your standard user password to log into the computer.</b></figcaption>
 </figure>
 
-# Speed Optimizations
+# 🏃‍♂️ Speed Optimizations
 For best performance set the following options by entering **F8**.
 
 -  Preferred Encoding: Tight
 -  Custom Compression Level: 1
 -  Allow JPEG Compression: 5
 
-# Troubleshooting
+# 🔧 Troubleshooting
 To kill the sessions log into the server and execute:
 ```bash
 vncserver -kill :*
